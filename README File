@@ -1,0 +1,24 @@
+# Ansible Apache Deployment Project
+
+## Overview
+This project automates Apache installation and website deployment using Ansible.
+
+## Technologies
+- AWS EC2
+- Ansible
+- Linux
+- Apache
+- Git
+- GitHub
+
+## Tasks Performed
+- Install Apache
+- Start Apache Service
+- Install Git
+- Clone Website Code from GitHub
+- Deploy Website to /var/www/html
+
+## Run Playbook
+
+```bash
+ansible-playbook project.yml
