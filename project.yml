@@ -1,0 +1,27 @@
+- name: mini project
+  hosts: all
+  become: yes
+
+  tasks:
+
+    - name: install apache
+      yum:
+        name: httpd
+        state: present
+
+    - name: started httpd
+      service:
+        name: httpd
+        state: started
+
+    - name: install git
+      yum:
+        name: git
+        state: present
+
+    - name: getting code from git
+      git:
+        repo: "https://github.com/numanpathan/amazon.git"
+        dest: /var/www/html
+
+        
