@@ -1,0 +1,6 @@
+1.Create Inventory File
+vi inventory
+
+[webserver]
+172.31.43.69
+172.32.42.13
